@@ -771,6 +771,7 @@
 			<TargetObject condition="begin with">HKCR\iTunes.</TargetObject> <!--Apple: iTunes update noise-->
 			<!--WINEVT publishers noise-->
 			<TargetObject condition="is">HKLM\Software\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{945a8954-c147-4acd-923f-40c45405a658}</TargetObject> <!--Windows update-->
+			<TargetObject condition="is">HKLM\SOFTWARE\Wow6432Node\WRData\Status\DriverVersion</TargetObject> <!--Webroot Secure Anywhere Driver Version Check-->
 		</RegistryEvent>
 	</RuleGroup>
 
