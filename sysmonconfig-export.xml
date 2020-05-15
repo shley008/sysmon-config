@@ -224,6 +224,16 @@
 			<!--SECTION: Google-->
 			<CommandLine condition="begin with">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --type=</CommandLine> <!--Google:Chrome: massive command-line arguments-->
 			<CommandLine condition="begin with">"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=</CommandLine> <!--Google:Chrome: massive command-line arguments-->
+			<Image condition="is">C:\itaotemp\usr\bin\snmpget.exe</Image> <!--ITAO SNMP AGENT-->
+			<CommandLine condition="begin with">"C:\itaotemp\usr\bin\snmpget.exe"</CommandLine> <!--Commandline for ITAO SNMPGET.exe-->
+			<ParentImage condition="is">C:\ProgramData\CentraStage\AEMAgent\AEMAgent.exe</ParentImage> <!--DATTO RMM Agent-->
+			<Image condition="is">C:\ProgramData\CentraStage\AEMAgent\AEMAgent.exe</Image> <!--DATTO RMM Agent-->
+			<ParentImage condition="is">C:\Program Files (x86)\Kaseya\COATEC09707617152720\AgentMon.exe</ParentImage> <!--ITAO AGENT MONITOR-->
+			<CommandLine condition="begin with">C:\Windows\system32\printfilterpipelinesvc.exe</CommandLine> <!-- Print service for XPS documents in Windows -->
+			
+			
+			
+			
 		</ProcessCreate>
 	</RuleGroup>
 	
@@ -348,6 +358,7 @@
 			<!--SECTION: Microsoft-->
 			<Image condition="begin with">C:\ProgramData\Microsoft\Windows Defender\Platform\</Image>
 			<Image condition="end with">AppData\Local\Microsoft\Teams\current\Teams.exe</Image> <!--Microsoft: Teams-->
+			<Image condition="is">C:\ProgramData\CentraStage\AEMAgent\AEMAgent.exe</Image> <!--DATTO RMM Network connections for Agent-->
 			<DestinationHostname condition="end with">.microsoft.com</DestinationHostname> <!--Microsoft:Update delivery-->
 			<DestinationHostname condition="end with">microsoft.com.akadns.net</DestinationHostname> <!--Microsoft:Update delivery-->
 			<DestinationHostname condition="end with">microsoft.com.nsatc.net</DestinationHostname> <!--Microsoft:Update delivery-->
