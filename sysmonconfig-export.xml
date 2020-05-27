@@ -540,6 +540,9 @@
 			<!--SECTION: Windows:Updates-->
 			<TargetFilename condition="begin with">C:\$WINDOWS.~BT\Sources\</TargetFilename> <!-- Windows: Feature updates containing lots of .exe and .sys-->
 			<Image condition="begin with">C:\Windows\winsxs\amd64_microsoft-windows</Image> <!-- Windows: Windows update-->
+			<Image condition="is">C:\Program Files\Microsoft Azure AD Sync\Bin\miiserver.exe</Image> <!--Excludes AZURE AD Sync-->
+			<Image condition="is">C:\ProgramData\CentraStage\AEMAgent\AEMAgent.exe</Image> <!--Exclude DATTO RMM or Autotask Endpoint Manager from File Creation Rules-->
+			<Image condition="is">C:\Program Files\ESET\ESET Security\ekrn.exe</Image> <!--Exclude ESET Endpoint Security from File Creation-->
 		</FileCreate>
 	</RuleGroup>
 
